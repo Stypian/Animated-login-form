@@ -5,6 +5,16 @@
 
     preventSpellCheck();
     
+    /*const stopAnimationOnClick = () => {
+        const submit = document.querySelector(".anilog__submit");
+        const cont = document.querySelector(".anilog__cont");
+        submit.addEventListener('mousedown', function() {
+            submit.style.animationPlayState = 'paused';
+            cont.style.animationPlayState = 'paused';
+        })
+    }
+    
+    stopAnimationOnClick();*/
 
     const stopAnimationOnHover = () => {
         const link = document.querySelectorAll(".anilog__sign-up-in--link");
@@ -62,20 +72,6 @@
     }
 
     increaseFontSize();
-
-    const submitForm = () => {
-            const login = document.querySelector(".anilog__login");
-            const signup = document.querySelector(".anilog__signup");
-            const form = document.querySelector(".anilog__cont");
-            login.addEventListener('click', function(e) {
-                form.submit();
-            })
-            signup.addEventListener('click', function(e) {
-                form.submit();
-            })
-        }
-    
-        submitForm();
 
 
 
