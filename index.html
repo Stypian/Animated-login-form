@@ -9,8 +9,8 @@
 </head>
 <body>
     <main class="anilog__main">
-        <form class="anilog__cont" action="#" method="post">
-            <div class="anilog__inner anilog__inner--login">
+        <div class="anilog__cont" action="#" method="post">
+            <form class="anilog__inner anilog__inner--login">
                 <h1 class="anilog__h1">Login</h1>
                 <label class="anilog__label" for="anilog__name">Username</label>
                 <input type="text" class="anilog__input anilog__input--name" id="anilog__name" name="anilog__name" required>
@@ -20,10 +20,10 @@
                     <input type="checkbox" class="anilog__check" id="anilog__rem" name="anilog__rem" value="false">
                     <label class="anilog__label" for="anilog__rem">Remember me</label>
                 </div>
-                <button class="anilog__login">Login</button>
+                <button class="anilog__submit">Login</button>
                 <p class="anilog__sign-up-in">Don't have an account yet? <a class="anilog__sign-up-in anilog__sign-up-in--link" href="#">Sign Up</a></p>
-            </div>
-            <div class="anilog__inner anilog__inner--signup">
+            </form>
+            <form class="anilog__inner anilog__inner--signup">
                 <h1 class="anilog__h1">Sign Up</h1>
                 <label class="anilog__label" for="anilog__name2">Username</label>
                 <input type="text" class="anilog__input anilog__input--name" id="anilog__name2" name="anilog__name2" required>
@@ -35,10 +35,10 @@
                     <input type="checkbox" class="anilog__check" id="anilog__rem" name="anilog__rem" value="false" required>
                     <label class="anilog__label" for="anilog__rem">I agree to the terms and conditions</label>
                 </div>
-                <button class="anilog__signup">Sign Up</button>
+                <button class="anilog__submit">Sign Up</button>
                 <p class="anilog__sign-up-in">Don't have an account yet? <a class="anilog__sign-up-in anilog__sign-up-in--link" href="#">Sign Up</a></p>
-            </div>
-        </form>
+            </form>
+        </div>
     </main>
 </body>
 </html>
