@@ -1,0 +1,198 @@
+body {
+    margin: 0;
+}
+
+* {
+    font-size: 10px;
+}
+
+.anilog__main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+}
+
+.anilog__cont {
+    width: 50rem;
+    height: 62rem;
+    border-radius: 2rem;
+    animation: shadow 2s linear infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.anilog__inner {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    transition: all 500ms linear;
+    position: absolute;
+}
+
+.anilog__inner--signup {
+  transform: scale(0);
+  opacity: 0;
+}
+
+.anilog__h1 {
+    color: #fff;
+    font-size: 3rem;
+    font-family: sans-serif;
+    align-self: center;
+    margin-bottom: 6rem;
+}
+
+.anilog__label {
+    color: #fff;
+    font-size: 2rem;
+    font-family: sans-serif;
+    padding-left: 1rem;
+}
+
+.anilog__input {
+    width: 96%;
+    border: none;
+    align-self: center;
+    background-color: #000;
+    border-bottom: solid #fff 2px;
+    color: #fff;
+    font-size: 1.8rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    outline: none;
+    padding-left: 1rem;
+}
+
+/* For Chrome, Safari, Edge */ 
+.anilog__input:-webkit-autofill { 
+    background-color: black !important; 
+    color: white !important; 
+    -webkit-text-fill-color: white !important; 
+    box-shadow: 0 0 0px 100px black inset; 
+}
+
+/* For Firefox */ 
+.anilog__input:-moz-autofill { 
+    background-color: black !important; 
+    color: white !important; 
+    box-shadow: 0 0 0px 100px black inset; 
+}
+
+.anilog__input--name {
+    margin-bottom: 4rem;
+}
+
+.anilog__input--pw {
+    margin-bottom: 4rem;
+}
+
+.anilog__input--email {
+    margin-bottom: 4rem;
+}
+
+.anilog__remember-wrap {
+    margin-bottom: 3rem;
+    display: flex;
+}
+
+.anilog__submit {
+    color: #000;
+    font-size: 2.2rem;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    width: 100%;
+    padding-block: 1rem;
+    border-radius: 3rem;
+    animation: col 2s linear infinite;
+    cursor: pointer;
+    border: none;
+}
+
+.anilog__sign-up-in {
+    color: #fff;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 1.8rem;
+    align-self: center;
+    padding-top: 1rem;
+}
+
+.anilog__sign-up-in--link {
+    animation: link 2s linear infinite;
+}
+
+.anilog__sign-up-in--link:hover {
+    text-shadow: 1px 1px 2px #fff;
+}
+
+@keyframes shadow {
+    0% {
+        box-shadow: 0px 0px 50px 20px rgba(255, 0, 255, 0.5);
+    }
+
+    25% {
+        box-shadow: 0px 0px 50px 20px rgba(0, 255, 0, 0.5);
+    }
+
+    50% {
+        box-shadow: 0px 0px 50px 20px rgba(0, 153, 255, 0.5);
+    }
+
+    75% {
+        box-shadow: 0px 0px 50px 20px rgba(255, 193, 77, 0.5);
+    }
+
+    100% {
+        box-shadow: 0px 0px 50px 20px rgba(255, 0, 255, 0.5);
+    }
+}
+
+@keyframes col {
+    0% {
+        background-color: rgba(255, 0, 255, 0.5);
+    }
+
+    25% {
+        background-color: rgba(0, 255, 0, 0.5);
+    }
+
+    50% {
+        background-color: rgba(0, 153, 255, 0.5);
+    }
+
+    75% {
+        background-color: rgba(255, 193, 77, 0.5);
+    }
+
+    100% {
+        background-color: rgba(255, 0, 255, 0.5);
+    }
+}
+
+@keyframes link {
+    0% {
+        color: rgba(255, 0, 255, 0.5);
+    }
+
+    25% {
+        color: rgba(0, 255, 0, 0.5);
+    }
+
+    50% {
+        color: rgba(0, 153, 255, 0.5);
+    }
+
+    75% {
+        color: rgba(255, 193, 77, 0.5);
+    }
+
+    100% {
+        color: rgba(255, 0, 255, 0.5);
+    }
+}
